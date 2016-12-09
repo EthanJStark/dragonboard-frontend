@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.css"
+import "../../styles/widget/widget.sass"
 import Header from './Header'
 
 class Text extends Component {
   render() {
+    // eslint-disable-next-line
     const { title, size, x, y, message } = this.props
-    const positionStyle = { top: x, left: y }
+    const positionStyle = { top: y, left: x }
 
     return (
       <article>
-        <div className="widget widget-width-1 widget-height-1" style={ positionStyle }>
+        <div className="widget widget--width-1 widget--height-1" style={ positionStyle }>
           <Header title={title}/>
-          <div className="widget-body body-text">
+          <div className="widget__body widget__text">
             { message.one.text }
           </div>
         </div>

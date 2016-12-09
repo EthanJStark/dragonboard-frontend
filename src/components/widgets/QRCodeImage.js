@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.css"
+import "../../styles/widget/widget.sass"
 import qrCodeGenerator from 'qrcode-npm'
 
 class QRCodeImage extends Component {

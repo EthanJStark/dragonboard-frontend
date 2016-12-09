@@ -1,0 +1,230 @@
+.home-nav
+  z-index: 1
+  overflow: hidden
+  a
+    text-decoration: none
+    letter-spacing: 0.15em
+    text-transform: uppercase
+
+.home-nav-menu
+  a
+    transition: color 0.3s ease
+    font-size: .8em
+    font-weight: 400
+    &:not(:last-child)
+      margin-left: 25px
+  .home-nav-grey
+    color: #9da0a7
+    &:hover
+      color: #fff
+  .login-nav
+    color: #fff
+
+.home-nav a:hover
+  cursor: pointer
+
+.nav-container
+  padding-left: 40px
+  padding-right: 40px
+  background-color: #3d4351
+  font-family: 'Catamaran', sans-serif
+  font-weight: 300
+  display: flex
+  flex-direction: row
+  align-items: center
+  overflow: hidden
+
+.logo
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin: 14px 0 14px 0
+  width: 210px
+  height: 36px
+  color: #fff
+
+.logo-green-square
+  background-color: #8dc63f
+  height: 33px
+  width: 33px
+  min-width: 33px
+  display: flex
+  align-items: center
+  div
+    font-size: 2em
+    color: #3d4351
+    font-weight: 200
+    position: absolute
+    left: 46px
+    top: 9px
+
+.logo img
+  max-height: 15px
+  margin-left: 10px
+
+.login-nav:hover
+  color: #ccc
+
+@media only screen and (max-width: 1200px) and (max-width: 1030px)
+  .logo-type
+    visibility: hidden
+
+.home-nav-right
+  flex-grow: 1
+
+.home-nav-menu
+  display: flex
+  flex-wrap: nowrap
+  justify-content: flex-end
+  flex-direction: row
+  align-items: center
+  max-height: 64px
+  overflow: hidden
+
+@media only screen and (max-width: 720px) and (max-width: 1120px)
+  .home-nav-right
+    visibility: hidden
+
+.nav-dropdown
+  display: inline-block
+  div a
+    transition: color 0.3s ease
+    color: #9da0a7
+    margin-left: 23px
+    &:hover
+      color: #fff
+
+.home-nav-menu a
+  margin-left: 10px
+
+.nav-dropdown
+  span
+    display: block
+  div
+    margin-right: 10px
+
+@media only screen and (max-width: 720px)
+  [class*="home-nav-right"]
+    visibility: hidden
+
+.more-triangle
+  border-bottom: 5px solid transparent
+  border-left: 5px solid transparent
+  border-right: 5px solid transparent
+  border-top: 5px solid
+  max-width: 0px
+  max-height: 0px
+  position: absolute
+  right: 520px
+  top: 29px
+  z-index: 15
+
+.home-nav-triangle
+  border-bottom: 10px solid white
+  border-left: 10px solid transparent
+  border-right: 10px solid transparent
+  border-top: 10px solid transparent
+  max-width: 0px
+  max-height: 0px
+  position: absolute
+  right: 545px
+  top: 38px
+  z-index: 15
+
+.home-nav-dropdown
+  position: absolute
+  background-color: #fff
+  min-width: 100px
+  z-index: 10
+  border-radius: 3px
+  right: 458px
+  top: 58px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  transition: all .2s ease-in-out
+  ul
+    z-index: 11
+    li
+      list-style: none
+      z-index: 12
+      text-align: center
+      justify-content: center
+      padding: 15px 10px
+      font-size: .9em
+      a
+        color: #888
+        font-weight: 600
+        padding: 0px
+        margin: 0px
+        &:hover
+          color: #333
+      &:not(:last-child)
+        border-bottom: solid 1px #ccc
+
+.home-nav-dropdown-content
+  padding: 0px
+  margin: 0px
+
+.demo-button
+  color: #8dc63f
+
+.nav-dropdown
+  position: relative
+  display: inline-block
+
+.home-nav-dropdown
+  position: absolute
+  background-color: #fff
+  min-width: 100px
+  z-index: 10
+  ul
+    z-index: 11
+    li
+      z-index: 12
+
+.login-nav
+  color: #fff !important
+
+.demo-button
+  color: #8dc63f !important
+  margin-right: 10px
+  &:hover
+    color: #76a535
+
+.nav-trial-button
+  transition: background-color 0.3s ease
+  background-color: #8dc63f
+  border-radius: 0 4px 4px 0
+  max-height: 38px
+  padding: 8px 10px
+  margin-left: 0
+  color: #fff
+  &:hover
+    background-color: #76a535
+
+@media only screen and (max-width: 720px)
+  [class*="home-nav-right"]
+    visibility: hidden
+
+.nav-dropdown
+  position: relative
+
+.sub-nav
+  position: absolute
+  display: inline-block
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  background-color: #fff
+  color: #9da0a7
+  border-radius: 4px
+  margin: 0 auto
+  width: 240px
+  top: 58px
+  left: 50%
+  margin-left: -120px
+  box-shadow: 0px 3px 3px 0px
+  z-index: 9999
+  text-align: center
+  padding-left: 0
+  display: none
+
+.nav-dropdown:hover > .sub-nav
+  display: block

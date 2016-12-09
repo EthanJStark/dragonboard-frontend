@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import NavMenu from './NavMenu'
-import '../styles/home_nav.css'
-import '../styles/dropdown.css'
+import '../styles/home_nav.sass'
+import '../styles/dropdown.sass'
 
 class HomeNav extends Component {
   render () {

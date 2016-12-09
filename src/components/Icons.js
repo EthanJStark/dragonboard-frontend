@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/icon.css'
+import '../styles/icon.sass'
 
 class Icons extends Component {
   render () {

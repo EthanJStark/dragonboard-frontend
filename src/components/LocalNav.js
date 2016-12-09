@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import '../styles/local_nav.css'
+import '../styles/local_nav.sass'
 import '../../public/arrow.svg'
 
 class LocalNav extends Component {

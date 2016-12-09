@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import '../styles/home_nav.css'
+import '../styles/home_nav.sass'
 
 class NavMenu extends Component {
   static defaultProps () {

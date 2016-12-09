@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.css"
-import "../../styles/widget/clock.css"
+import "../../styles/widget/widget.sass"
+import "../../styles/widget/clock.sass"
 import moment from 'moment'
 import Header from './Header'
 
@@ -39,18 +39,19 @@ class Clock extends Component {
   }
 
   render() {
+    // eslint-disable-next-line
     const { title, x, y, format } = this.props
-    const positionStyle = { top: x, left: y }
+    const positionStyle = { top: y, left: x }
 
     return (
       <article>
-        <div className="widget widget-width-1 widget-height-1" style={ positionStyle }>
+        <div className="widget widget--width-1 widget--height-1" style={ positionStyle }>
           <Header title={title}/>
-          <div className="time-container">
-            <div className="clockface">
+          <div>
+            <div className="widget__clockface">
               { this.state.time } <sub>{ this.state.amPm }</sub>
             </div>
-            <div className="date body-text">
+            <div className="widget__date widget__text">
               <div>
                 { this.state.dayOfWeek }
               </div>

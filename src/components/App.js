@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Dashboard from './Dashboard'
-import '../styles/button.css'
+import '../styles/button.sass'
 
 class App extends Component {
   render () {

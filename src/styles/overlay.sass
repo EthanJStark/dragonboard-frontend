@@ -1,0 +1,108 @@
+.overlay-container
+  z-index: 0
+  height: 300px
+  position: relative
+  text-align: center
+  background: #3d4351
+  padding-top: 6em
+  padding-bottom: 6em
+  padding: 10% 0
+
+.overlay-img
+  z-index: 10
+  position: absolute
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  &:after
+    content: ''
+    z-index: 10
+    position: absolute
+    opacity: 0.4
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    background-size: cover
+    background-image: url(/images/backdrop3.jpg)
+    background-position: center
+    background-repeat: no-repeat
+
+.overlay-header
+  margin: 0 auto 20px auto
+  max-width: 90%
+  color: #fff
+  z-index: 20
+  font-family: 'Kanit', sans-serif
+  font-size: 13px
+  position: relative
+  text-align: center
+
+.overlay-heading
+  margin-top: 200px
+  margin-bottom: 10px
+
+.overlay-message
+  font-size: 28px
+
+@media only screen and (max-width: 1800px)
+  .overlay-img
+    width: 100%
+    margin: auto
+
+@media only screen and (max-width: 720px)
+  .overlay-header
+    width: 600px
+    margin-top: 100px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    text-align: left
+    max-width: 80em
+    padding: 0 2em
+    position: relative
+  .overlay-heading
+    width: 300px
+    margin: auto
+    display: flex
+    justify-content: left
+    flex-direction: column
+    text-align: center
+    max-width: 80em
+    padding: 1em 2em
+  .overlay
+    padding: 1em
+
+@media only screen and (max-width: 485px)
+  .overlay-img
+    width: 100%
+    max-height: 360px
+  .overlay-container
+    height: 250px
+  .overlay-header
+    width: 300px
+    margin-top: 50px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    text-align: left
+    max-width: 80em
+    padding: 0 2em
+    position: relative
+  .overlay-heading
+    width: 250px
+    margin: 0px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    text-align: center
+    max-width: 80em
+    padding: 0em 1em
+  .overlay
+    padding: 1em
+  .overlay-message
+    font-size: 20px

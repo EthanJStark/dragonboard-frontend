@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/dash_nav.css'
+import '../styles/dash_nav.sass'
 
 class DashNav extends Component {
   render () {

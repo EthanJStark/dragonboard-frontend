@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.css"
+import "../../styles/widget/widget.sass"
 
 class Header extends Component {
   static propTypes = { title: React.PropTypes.string.isRequired }

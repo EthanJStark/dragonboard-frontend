@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/quote.css'
+import '../styles/quote.sass'
 
 class Quote extends Component {
   render () {

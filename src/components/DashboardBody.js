@@ -3,7 +3,7 @@ import Text from './widgets/Text'
 import Image from './widgets/Image'
 import QRCode from './widgets/QRCode'
 import Clock from './widgets/Clock'
-import '../styles/dash_body.css'
+import '../styles/dash_body.sass'
 
 const dashboardBodyProps = {
   widgets: [
@@ -11,8 +11,8 @@ const dashboardBodyProps = {
       type: 'Text',
       title: 'Text',
       size: '1x1',
-      x: '10px',
-      y: '340px',
+      y: '10px',
+      x: '340px',
       message: {
         one: { text: 'Body text', type: 'Text' },
         two: { text: 'blarg', type: 'Alert' },
@@ -24,8 +24,8 @@ const dashboardBodyProps = {
       type: 'Image',
       title: 'Image',
       size: '1x1',
-      x: '10px',
-      y: '100px',
+      y: '10px',
+      x: '100px',
       path: 'http://www.easypano.com/images/pw/v3/banner.jpg',
       reload: 3
     },
@@ -33,8 +33,8 @@ const dashboardBodyProps = {
       type: 'Clock',
       title: 'Clock',
       size: '1x1',
-      x: '10px',
-      y: '820px',
+      y: '10px',
+      x: '820px',
       format: 0,
       country: 'United States',
       city: 'Los Angeles'
@@ -43,8 +43,8 @@ const dashboardBodyProps = {
       type: 'QRCode',
       title: 'QR Code',
       size: '1x1',
-      x: '10px',
-      y: '580px',
+      y: '10px',
+      x: '580px',
       url: 'http://www.easypano.com/images/pw/v3/banner.jpg'
     },
   ]

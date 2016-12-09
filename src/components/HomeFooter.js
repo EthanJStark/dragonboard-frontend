@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/home_footer.css'
+import '../styles/home_footer.sass'
 
 class HomeFooter extends Component {
   render () {

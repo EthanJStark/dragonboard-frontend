@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/home_body.css'
+import '../styles/home_body.sass'
 import Overlay from './Overlay'
 import Quote from './Quote'
 import Icons from './Icons'
