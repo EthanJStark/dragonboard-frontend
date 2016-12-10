@@ -1,0 +1,12 @@
+.widget {
+  &__RSS-feed {
+    &--date {
+      color: #828282;
+      padding-bottom: 10px;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+}

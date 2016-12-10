@@ -3,6 +3,7 @@ import Text from './widgets/Text'
 import Image from './widgets/Image'
 import QRCode from './widgets/QRCode'
 import Clock from './widgets/Clock'
+import RSS from './widgets/RSS'
 import '../styles/dash_body.css'
 
 const dashboardBodyProps = {
@@ -47,6 +48,16 @@ const dashboardBodyProps = {
       x: '580px',
       url: 'http://www.easypano.com/images/pw/v3/banner.jpg'
     },
+    {
+      type: 'RSS',
+      title: 'RSS Feed',
+      size: '2x2',
+      y: '250px',
+      x: '180px',
+      url: 'http://www.theonion.com/feeds/rss',
+      username: '',
+      password: ''
+    },
   ]
 }
 
@@ -56,7 +67,8 @@ const BuildWidgets = widgetArray =>
       'Text': <Text { ...widget } key={ widget.title } />,
       'Image': <Image { ...widget } key={ widget.title } />,
       'QRCode': <QRCode { ...widget } key={ widget.title } />,
-      'Clock': <Clock { ...widget } key={ widget.title } />
+      'Clock': <Clock { ...widget } key={ widget.title } />,
+      'RSS': <RSS { ...widget } key={ widget.title } />
     }[ widget.type ]))
 
 class DashboardBody extends Component {
