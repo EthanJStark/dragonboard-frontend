@@ -1,0 +1,25 @@
+.icons {
+  min-height: 200px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.icons-container {
+  padding: 3em 2em;
+  max-width: 75em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.icons img {
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+  display: block
+}
+
+.icons .section-heading {
+  text-align: center;
+  margin-bottom: 28px;
+  margin-top: 0px;
+}

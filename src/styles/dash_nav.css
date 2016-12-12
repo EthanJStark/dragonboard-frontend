@@ -1,0 +1,122 @@
+.dash-nav {
+  background-color: #24272A;
+  color: #ccc;
+  margin: 0;
+  padding-left: 13px;
+  min-height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.dashboard-menu {
+  padding-left: 5px;
+  transition: color .45s cubic-bezier(.23,1,.32,1);
+  font-family: Catamaran;
+  font-weight: 300;
+  font-size: 1.1em;
+  flex-grow:5;
+}
+
+.dashboard-menu:hover {
+  color: #999;
+}
+
+.dashboard-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow:1;
+}
+
+.logo-white-square {
+  transition: background-color .45s cubic-bezier(.23,1,.32,1);
+  background-color: #fff;
+  height: 33px;
+  width: 33px;
+  min-width: 33px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.logo-white-square:hover {
+  background-color: #ccc;
+}
+
+.logo-white-square div {
+  font-size: 1.5em;
+  color: #24272A;
+  font-weight: 200;
+  position: absolute;
+  top: 4px;
+  left: 8px;
+}
+
+.dash-nav-right {
+  padding-right: 30px;
+  font-weight: 300;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  font-size: .8em;
+}
+
+.trial-pill {
+  transition: background-color .45s cubic-bezier(.23,1,.32,1);
+  background-color: #3A3A3A;
+  padding: 10px 18px;
+  border-radius: 100px;
+  margin-right: 40px;
+
+}
+
+.trial-pill:hover {
+  background-color: #515151;
+}
+
+.trial-pill span {
+  font-weight:600;
+}
+
+.help-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 20px 10px 0;
+}
+
+.help-nav p {
+  margin: 0 5px 0 10px;
+}
+
+.help-nav:hover .help-arrow {
+  opacity: 1;
+}
+
+.help-arrow {
+  max-height: 10px;
+  margin-right: 10px;
+  opacity:0;
+}
+
+.account-icon {
+  background-color: #F0F2F3;
+  height: 33px;
+  width: 33px;
+  min-width: 33px;
+  border-radius: 2px;
+  position:relative;
+}
+
+.account-icon span {
+  position:absolute;
+  font-size: 1.2em;
+  top: 7px;
+  left: 5px;
+  color: #24272A;
+}

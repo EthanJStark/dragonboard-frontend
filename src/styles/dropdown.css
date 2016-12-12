@@ -1,0 +1,40 @@
+.sub-nav li {
+  padding: 18px;
+  width: calc( 100%-18px );
+  border-bottom: 1px solid rgba( 0,0,0,0.1 );
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.sub-nav a:hover {
+  color: #3d4351;
+}
+
+.home-nav-menu .flat-button {
+  color: #fff;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-right: 0px;
+}
+
+.home-nav-menu .trial-input {
+  border-color: rgba( 61, 67, 87, 0.1 );
+  background-color: #535b6e;
+  transition: background-color 0.3s ease;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  text-indent: 3px;
+  border: 0;
+  font-size: 14px;
+  width: 150px;
+  height: 14px;
+  padding: 12px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+}
+
+.home-nav-menu .trial-input:hover {
+  background-color: #5d667c;
+}

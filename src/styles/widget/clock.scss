@@ -1,0 +1,19 @@
+.widget {
+  &__clockface {
+    background-color: #1f1f1f;
+    padding: 20px 12px;
+    font-size: 3em;
+  }
+
+  &__date {
+    padding: 12px;
+  }
+}
+
+sub {
+  font-size: 60%;
+  vertical-align: baseline;
+  position: relative;
+  height: 0;
+  line-height: 1;
+}

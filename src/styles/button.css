@@ -1,0 +1,78 @@
+.flat-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 1em 2em;
+  box-shadow: none;
+  display: inline-block;
+}
+
+.trial-button {
+  background-color: #8dc63f;
+  margin-right: 20px;
+}
+
+.demo-button {
+  background-color: #3d4351;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+  .flat-button {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .trial-button {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .demo-button {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .flat-button {
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    max-width: 80em;
+  }
+
+  .trial-button {
+    width: 200px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .demo-button {
+    width: 200px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3px;
+    position: relative;
+  }
+}
